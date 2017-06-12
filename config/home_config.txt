@@ -1,0 +1,7 @@
+set dq_db_location='/user/sp57529/data/amlmkt_dq' ;
+set dq_schema=amlmkt_dq;
+set src_mdw_schema=l1_amlmkt_mdwe;
+set hdfs_path=/user/sp57529/data
+set dq_db_path="/user/sp57529/data/amlmkt_dq"
+set dq_chk_master_path=/user/sp57529/data/amlmkt_dq/dq_check_master/
+set dq_app_config_path=/user/sp57529/data/amlmkt_dq/dq_app_config/

@@ -1,0 +1,1 @@
+app_cust|l4_airlines|cust_prod_detl|2017-06-01
