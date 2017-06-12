@@ -74,7 +74,7 @@ echo "dq_database_path :" $dq_db_path>> ${LOGFILE}
 case "$env" in
                 sit)
                 echo $env >> ${LOGFILE}
-                hiveserver2='"jdbc:hive2://bdgtmaster02i1d.nam.nsroot.net:10000/default;principal=hive/bdgtmaster02i1d.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET"'
+                hiveserver2='"jdbc:hive2://123.nam.nsroot.net:10000/default;principal=hive/123.net@123.NET"'
                 beeline -u $hiveserver2 --silent -e "drop database if exists ${dq_db_nm} cascade;"
                 beeline -u $hiveserver2 --silent -e "create database ${dq_db_nm} location '/user/sp57529/data/${dq_db_nm}';"
                 ;;  
@@ -88,19 +88,19 @@ case "$env" in
                 ;; 				
                 uat)
                 echo $env >> ${LOGFILE}
-                hiveserver2='"jdbc:hive2://bdgtmaster02i1u.nam.nsroot.net:10000/default;principal=hive/bdgtmaster02i1u.nam.nsroot.net@APACUXUAT.DYN.NSROOT.NET"'
+                hiveserver2='"jdbc:hive2://123:10000/default;principal=hive/123.net@234.NET"'
                 beeline -u $hiveserver2 -e "drop database if exists amlmkt_dq cascade;"
                 beeline -u $hiveserver2 -e "create database amlmkt_dq location '/user/sp57529/data/amlmkt_dq';"
                 ;;
                 prod)
                 echo $env >> ${LOGFILE}
-                hiveserver2='"jdbc:hive2://bdsgmaster02i1p.nam.nsroot.net:10000/default;principal=hive/bdsgmaster02i1p.nam.nsroot.net@APACUXPRD.DYN.NSROOT.NET"'
+                hiveserver2='"jdbc:hive2://123.net:10000/default;principal=hive/345.net@123.NET"'
                 beeline -u $hiveserver2 -e "drop database if exists amlmkt_dq cascade;"
                 beeline -u $hiveserver2 -e "create database amlmkt_dq location '/user/sp57529/data/amlmkt_dq';"
                 ;;
                 taco)
                 echo $env >> ${LOGFILE}
-                hiveserver2='"jdbc:hive2://bdgtmaster12h1l.nam.nsroot.net:10000/default;principal=hive/bdgtmaster12h1l.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET"'
+                hiveserver2='"jdbc:hive2://123.net:10000/default;principal=hive/345.nsroot.net@456.NET"'
                 beeline -u $hiveserver2 -e "drop database if exists amlmkt_dq cascade;"
                 beeline -u $hiveserver2 -e "create database amlmkt_dq location '/user/sp57529/data/amlmkt_dq';"
                 ;;

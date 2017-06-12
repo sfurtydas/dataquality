@@ -67,20 +67,20 @@ url=""
  
 if [ "$1" == "dev" ]; then
   echo "dev" ${LOGFILE}
-  url="jdbc:hive2://bdgtmaster02i1d.nam.nsroot.net:10000/amlmkt_dq;principal=hive/bdgtmaster02i1d.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET;user pass"
+  url="jdbc:hive2://123.nsroot.net:10000/amlmkt_dq;principal=hive/123.net@345;user pass"
 elif [ "$1" == "uat" ]; then
   echo "uat" ${LOGFILE}
-  url="jdbc:hive2://bdgtmaster02i1u.nam.nsroot.net:10000/amlmkt_dq;principal=hive/bdgtmaster02i1u.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET;user pass"
+  url="jdbc:hive2://b234.net:10000/amlmkt_dq;principal=hive/122.net@345;user pass"
   
 elif [ "$1" == "home" ]; then
   echo "home" ${LOGFILE}
   url="jdbc:hive2://localhost:10000/amlmkt_dq;user pass"
 elif [ "$1" == "prod" ]; then
   echo "prod" ${LOGFILE}
-  url="jdbc:hive2://bdgtmaster02i1p.nam.nsroot.net:10000/amlmkt_dq;principal=hive/bdgtmaster02i1p.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET;user pass"
+  url="jdbc:hive2://123:10000/amlmkt_dq;principal=hive/234.net@345.NET;user pass"
 else
   echo "taco" ${LOGFILE}
-  url="jdbc:hive2://bdgtmaster12h1l.nam.nsroot.net:10000/default;principal=hive/bdgtmaster12h1l.nam.nsroot.net@NAMUXDEV.DYN.NSROOT.NET;user pass"
+  url="jdbc:hive2://123.net:10000/default;principal=hive/345t.net@456.NET;user pass"
  
 fi
  
